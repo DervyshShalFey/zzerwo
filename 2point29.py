@@ -10,5 +10,7 @@ try:
     print(f'Result: {int(x)}')
 except ValueError:
     print('You have inserted not a whole number!')
+except ZeroDivisionError:
+    print('Last number can\'t be zero, I guess I told ya?')
 except Exception:
     print('Number must be more than or equal to 100, but be less or equal to 999!')
